@@ -6,14 +6,28 @@ body {
   color: #444;
 }
 
-h1, h2 {
+header {
+  text-align: center;
+
+  h1, h2 {
+    font-family: $header-font;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+blockquote {
+  text-align: center;
   font-family: $header-font;
-}
+  font-size: 1.75rem;
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
+  cite {
+    font-size: 1.25rem;
+  }
 }
