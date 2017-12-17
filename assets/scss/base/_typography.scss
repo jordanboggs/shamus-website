@@ -1,8 +1,19 @@
 /* Global font settings */
 
 body {
-  font-family: $font-stack;
+  font-family: $body-font;
   font-size: 16px;
-  font-weight: $font-light;
   color: #444;
+}
+
+h1, h2 {
+  font-family: $header-font;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
