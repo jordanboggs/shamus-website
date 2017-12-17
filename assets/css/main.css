@@ -372,4 +372,10 @@ h1 {
 h2 {
   font-size: 2rem; }
 
+/* Styling for header */
+header nav ul {
+  list-style-type: none; }
+  header nav ul li {
+    display: inline; }
+
 /*# sourceMappingURL=main.css.map */
