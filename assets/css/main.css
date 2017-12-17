@@ -383,5 +383,10 @@ footer #social {
   list-style: none; }
   footer #social li {
     display: inline; }
+    footer #social li a {
+      text-decoration: none; }
+      footer #social li a i {
+        color: #444;
+        font-size: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
