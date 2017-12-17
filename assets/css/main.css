@@ -378,4 +378,10 @@ header nav ul {
   header nav ul li {
     display: inline; }
 
+/* Styling for footer */
+footer #social {
+  list-style: none; }
+  footer #social li {
+    display: inline; }
+
 /*# sourceMappingURL=main.css.map */
