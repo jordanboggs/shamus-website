@@ -1,0 +1,9 @@
+/* Styling for cards */
+.card {
+  @include border-radius(5px);
+  
+  img {
+    @include border-top-left-radius(5px);
+    @include border-top-right-radius(5px);
+  }
+}
