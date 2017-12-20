@@ -379,7 +379,16 @@ blockquote {
   blockquote cite {
     font-size: 1.25rem; }
 
+#projects h2 {
+  text-align: center; }
+
+.card p {
+  text-align: center; }
+
 /* Layout */
+* {
+  box-sizing: border-box; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -391,28 +400,49 @@ body {
 nav li {
   padding: 0 2vw; }
 
-#bio-section {
+#bio-section, #projects, #projects .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 1vw; }
-  #bio-section #bio-pic {
-    flex-basis: auto; }
-  #bio-section #bio-txt {
+  #bio-section #bio-pic, #projects #bio-pic, #bio-section #bio-txt, #projects #bio-txt {
     flex-basis: auto; }
 
+#projects h2 {
+  order: 1; }
+#projects .card {
+  order: 2;
+  flex-basis: auto;
+  padding: 0; }
+
 @media only screen and (min-width: 1024px) {
-  #bio-section {
+  #bio-section, #projects, #projects .card {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: minmax(200px, auto);
     padding: 0 2vw; }
-    #bio-section #bio-pic {
+    #bio-section #bio-pic, #projects #bio-pic {
       margin-right: 1vw; }
-    #bio-section #bio-txt {
+    #bio-section #bio-txt, #projects #bio-txt {
       margin-left: 1vw; }
-      #bio-section #bio-txt h2 {
-        margin-top: 0; } }
+      #bio-section #bio-txt h2, #projects #bio-txt h2 {
+        margin-top: 0; }
+
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto; }
+    #projects h2 {
+      grid-row: 1 / 2;
+      display: block; }
+    #projects .card-container {
+      grid-row: 2 / 3;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%; }
+      #projects .card-container .card {
+        max-width: 250px; } }
 /* Styling for header */
 header nav ul {
   list-style-type: none; }
